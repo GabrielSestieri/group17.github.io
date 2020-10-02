@@ -17,6 +17,7 @@ p, input, li {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .header-image {
