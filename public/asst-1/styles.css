@@ -8,6 +8,7 @@ p, input, li {
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     background-color: #991818;
     text-shadow: #17B042 -1px 1px; 
     color: #F4FFEE;
@@ -17,7 +18,6 @@ p, input, li {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
-    flex-wrap: wrap;
 }
 
 .header-image {
@@ -47,9 +47,8 @@ body {
 .image-cap {
     display: flex;
     flex: 0 1 auto;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin: 15px;
-    max-width: 199px;
 }
 
 .image-cap p {
@@ -62,7 +61,7 @@ body {
 .image {
     border: 1px solid #17B042;
     border-radius: 4px;
-    max-width: inherit;
+    max-width: 199px;
 }
 
 .list-text {
@@ -85,28 +84,27 @@ body {
     font-weight: 400;
 }
 
-
 @media screen and (max-width: 1000px) { 
 .image-cap {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     flex: 1 0 auto;
-    justify-content: space-evenly;
     align-items: center;
     margin-right: 0px;
     margin-bottom: 15px;
+    justify-content: space-evenly;
 }
 
 .list-text {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     flex: 0 2 auto;
+    justify-content: flex-start;
 }
 
 .container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
     justify-content: center;
 }
 }
