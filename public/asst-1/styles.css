@@ -20,12 +20,6 @@ p, input, li {
     box-sizing: border-box;
 }
 
-.header-image {
-    width: auto;
-    height: auto;
-    background-color: #991818;
-}
-
 body {
     background-color: #54FF85;
     margin: 0;
@@ -46,9 +40,10 @@ body {
 
 .image-cap {
     display: flex;
-    flex: 0 1 auto;
     flex-flow: column wrap;
+    flex: 0 1 auto;
     margin: 15px;
+    width: 199px;
 }
 
 .image-cap p {
@@ -61,7 +56,7 @@ body {
 .image {
     border: 1px solid #17B042;
     border-radius: 4px;
-    max-width: 199px;
+    width: inherit;
 }
 
 .list-text {
@@ -87,8 +82,7 @@ body {
 @media screen and (max-width: 1000px) { 
 .image-cap {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     flex: 1 0 auto;
     align-items: center;
     margin-right: 0px;
@@ -98,8 +92,7 @@ body {
 
 .list-text {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     flex: 0 2 auto;
     justify-content: flex-start;
 }
