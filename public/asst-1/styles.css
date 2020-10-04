@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-flow: column wrap;
     flex: 0 1 auto;
-    margin: 15px;
+    margin-right: 15px;
     width: 199px;
 }
 
@@ -64,7 +64,6 @@ body {
     background-color: #F4FFEE;
     border: dashed #17B042;
     border-radius: 4px;
-    margin: 15px;
     padding: 15px;
 }
 
@@ -95,6 +94,8 @@ body {
     flex-flow: row wrap;
     flex: 0 2 auto;
     justify-content: flex-start;
+    margin: 15px;
+    margin-top: 0px;
 }
 
 .container {
